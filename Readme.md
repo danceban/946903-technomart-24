@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Dan Ceban](https://up.htmlacademy.ru/htmlcss/24/user/946903).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
