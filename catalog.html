@@ -15,7 +15,7 @@
           <li><a class="main-navigation-logo">Техномарт</a></li>
           <li>Поиск:<!-- Здесь будет форма поиска --></li>
           <li><a href="#">Закладки: 0</a></li>
-          <li><a href="#">Корзина: 0</a></li>
+          <li><a href="#">Корзина: 10</a></li>
           <li class="complete-order"><a href="#">Оформить заказ</a></li>
         </ul>
       </nav>
@@ -32,8 +32,9 @@
       </div>
 
       <ul class="user-navigation">
-          <li class="login-link"><a href="#">Вход</a></li>
-          <li class="register-link"><a href="#">Регистрация</a></li>
+          <li class="control"><span>Равшан Джамшутович</span></li>
+          <li class="user-link"><a href="#">Мои заказы</a></li>
+          <li class="user-link"><a href="#">Личный кабинет</a></li>
       </ul>
 
       <nav class="site-navigation">
@@ -52,78 +53,27 @@
 
     <main class="container">
 
-      <section class="features">
-        <h2 class="visually-hidden">Обзор товаров и услуг</h2>
-        <div>
-          <ul>
-            <li class="materials new">
-              <a href="#">
-                <h3>Материалы</h3>
-                <span>На любой вкус</span>
-              </a>
-            </li>
-            <li class="instruments">
-              <a href="#">
-                <h3>Инструмент</h3>
-                <span>На все случаи</span>
-              </a>
-            </li>
-            <li class="machines">
-              <a href="#">
-                <h3>Техника</h3>
-                <span>Для стройки</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li class="carousel">
-              <h3>Дрели</h3>
-              <span>Соседям на радость!</span>
-              <span class="carousel-back"></span>
-              <span class="carousel-next"></span>
-              <a href="catalog.html" class="button">Открыть каталог</a>
-              
-            </li>
-            <li class="discount">
-              <a href="#">
-              <h3>Скидки 50%</h3>
-              <span>На 350 товаров</span>
-              </a>
-            </li>
-            <li class="delivery">
-              <a href="#">
-                <h3>Доставка</h3>
-                <span>Бесплатно</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <ul class="breadcrumbs">
+          <li><a href="index.html"></a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li class="breadcrumbs-current">Перфораторы</li>
+      </ul>
+
+      <section class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <!-- Здесь будет форма -->
       </section>
 
-      <section class="popular-items">
-        <ul>
-          <li><h2>Популярные товары:</h2></li>
-          <li><a href="#" class="button">Все популярные товары</a></li>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="sorting">
+          <li>Сортировка:</li>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
         </ul>
         <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3>
-              <a href="#">
-                <span class="catalog-category">Перфоратор BOSCH</span>
-                <span class="catalog-item-title">BFG 9000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-            </p>
-            <p class="catalog-item-price">
-            <span class="old-price">32500 Р.</span>
-            <a href="#">
-              <span class="new-price">25500 Р.</span>
-            </a>
-            </p>
-          </li>
           <li class="catalog-item">
             <h3>
               <a href="#">
@@ -150,10 +100,10 @@
             <p class="catalog-item-image">
             </p>
             <p class="catalog-item-price">
-              <span class="old-price">30500 Р.</span>
-              <a href="#">
-                <span class="new-price">25500 Р.</span>
-              </a>
+            <span class="old-price">30500 Р.</span>
+            <a href="#">
+              <span class="new-price">25500 Р.</span>
+            </a>
             </p>
           </li>
           <li class="catalog-item new-product">
@@ -164,70 +114,123 @@
               </a>
             </h3>
             <p class="catalog-item-image">
+              <a href="#" class="order-button">Купить</a>
+              <a href="#" class="order-button">В закладки</a>
             </p>
             <p class="catalog-item-price">
+            
+            <a href="#">
+              <span class="new-price">15500 Р.</span>
+            </a>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
               <a href="#">
-                <span class="new-price">12500 Р.</span>
+                <span class="catalog-category">Перфоратор BOSCH</span>
+                <span class="catalog-item-title">BFG 3000</span>
               </a>
+            </h3>
+            <p class="catalog-item-image">
+            </p>
+            <p class="catalog-item-price">
+            <span class="old-price">22500 Р.</span>
+            <a href="#">
+              <span class="new-price">15500 Р.</span>
+            </a>
+            </p>
+          </li>
+          <li class="catalog-item new-product">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Перфоратор BOSCH</span>
+                <span class="catalog-item-title">BFG 6000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+            </p>
+            <p class="catalog-item-price">
+            <span class="old-price">30500 Р.</span>
+            <a href="#">
+              <span class="new-price">25500 Р.</span>
+            </a>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Перфоратор BOSCH</span>
+                <span class="catalog-item-title">BFG 2000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+            </p>
+            <p class="catalog-item-price">
+            <a href="#">
+              <span class="new-price">12500 Р.</span>
+            </a>
+            </p>
+          </li>
+          <li class="catalog-item new-product">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Перфоратор BOSCH</span>
+                <span class="catalog-item-title">BFG 3000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+            </p>
+            <p class="catalog-item-price">
+            <span class="old-price">22500 Р.</span>
+            <a href="#">
+              <span class="new-price">15500 Р.</span>
+            </a>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Перфоратор BOSCH</span>
+                <span class="catalog-item-title">BFG 6000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+            </p>
+            <p class="catalog-item-price">
+            <span class="old-price">30500 Р.</span>
+            <a href="#">
+              <span class="new-price">25500 Р.</span>
+            </a>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Перфоратор BOSCH</span>
+                <span class="catalog-item-title">BFG 2000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+            </p>
+            <p class="catalog-item-price">
+            <a href="#">
+              <span class="new-price">12500 Р.</span>
+            </a>
             </p>
           </li>
         </ul>
-      </section>   
-      
-      <section class="popular-manufacturers">
-        <div>
-          <h2>Популярные производители:</h2>
-          <a href="#" class="button">Все производители</a>
-        </div>
-          <ul class="popular-manufacturers-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-      </section>
 
-      <section class="services">
-        <h2>Сервисы</h2>
-        <span>Хороший интернет-магазин отличается от плохого не только ценами!</span>
-        <span>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</span>
-        <ul class="service-items">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Кредит</a></li>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
-        <div class="detailed">
-          <h3>Доставка</h3>
-          <span>Мы с удовольствием доставим ваш товар прямо</span> 
-          <span>к вашему подъезду совершенно бесплатно!</span>
-          <span>Ведь мы неплохо заработаем,</span>
-          <span>поднимая его на ваш этаж!</span>
-          <span class="service-car"></span>
-        </div>
       </section>
 
       <section class="about">
-        <h2>КОМПАНИЯ «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <span>Мы можем доставить ваш товар в самые отдаленные точки России!</span>
-        <span>Техномарт работает со многими транспортными компаниями:</span>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button">Подробнее о компании</a>
-        
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, <br>
-        заехав в нащ офис:
-        </p>
-        
-        <a href="#">Заблудились? Напишите нам!</a>
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
       
     </main>
@@ -280,8 +283,8 @@
     </footer>
 
     <section class="modal">
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <!-- Здесь будет форма связи -->
+        <h2 class="visually-hidden">Добавление товаров в корзину</h2>
+        <!-- Здесь будет форма добавления товаров в корзину -->
         <span class="modal-close">x</span>
     </section>
 
