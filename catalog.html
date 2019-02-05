@@ -78,39 +78,47 @@
         </div>
           <form action="/echo" method="post">
             <div class="manufacturer-filter">
-              <h3>Производители:</h3>
-              <div>
-                <input type="checkbox" id="bosch" name="bosch" value="bosch" checked>
-                <label for="bosch">Bosch</label>
-              </div>
-              <div>
-                <input type="checkbox" id="interskol" name="interskol" value="interskol">
-                <label for="interskol">Interskol</label>
-              </div>
-              <div>
-                <input type="checkbox" id="makita" name="makita" value="makita" checked>
-                <label for="makita">Makita</label>
-              </div>
-              <div>
-                <input type="checkbox" id="dewalt" name="dewalt" value="dewalt">
-                <label for="dewalt">Dewalt</label>
-              </div>
-              <div>
-                <input type="checkbox" id="hitachi" name="hitachi" value="hitachi">
-                <label for="hitachi">Hitachi</label>
-              </div>
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input type="checkbox" id="filter-bosch" name="bosch" value="bosch" checked>
+                    <label for="filter-bosch">Bosch</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" id="filter-interskol" name="interskol" value="interskol">
+                    <label for="filter-interskol">Interskol</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" id="filter-makita" name="makita" value="makita" checked>
+                    <label for="filter-makita">Makita</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" id="filter-dewalt" name="dewalt" value="dewalt">
+                    <label for="filter-dewalt">Dewalt</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" id="filter-hitachi" name="hitachi" value="hitachi">
+                    <label for="filter-hitachi">Hitachi</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
             <div class="power-filter">
-              <h3>Питание:</h3>
-              <div>
-                <input type="radio" id="battery-powered" name="power-source" value="battery-powered"
+              <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input type="radio" id="battery-powered" name="power-source" value="battery-powered"
                        checked>
-                <label for="battery-powered">Аккумуляторные</label>
-              </div>
-              <div>
-                <input type="radio" id="line-powered" name="power-source" value="line-powered">
-                <label for="line-powered">Сетевые</label>
-              </div>
+                    <label for="battery-powered">Аккумуляторные</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="radio" id="line-powered" name="power-source" value="line-powered">
+                    <label for="line-powered">Сетевые</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
             <div class="button form-button">
               <button class="button" type="submit">Показать</button>
