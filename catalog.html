@@ -11,7 +11,10 @@
     <header class="main-header">
       <div class="main-navigation">
         <a class="main-navigation-logo"><img src="img/site-logo.svg" width="110" height="18" alt="Логотип сайта Техномаркет"></a>
-        Поиск:<!-- Здесь будет форма поиска -->
+        <form action="" method="post">
+          <label for="search">Поиск:</label>
+          <input type="search" name="search" id="search">
+        </form>
         <ul>
           <li><a href="#">Закладки: 0</a></li>
           <li><a href="#">Корзина: 0</a></li>
@@ -69,13 +72,55 @@
       </div>
 
       <section class="filters">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- Здесь будет форма -->
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <div class="section-heading">
+          <h4>Фильтр:</h4>
+        </div>
+          <form action="/echo" method="post">
+            <div class="manufacturer-filter">
+              <h3>Производители:</h3>
+              <div>
+                <input type="checkbox" id="bosch" name="bosch" value="bosch" checked>
+                <label for="bosch">Bosch</label>
+              </div>
+              <div>
+                <input type="checkbox" id="interskol" name="interskol" value="interskol">
+                <label for="interskol">Interskol</label>
+              </div>
+              <div>
+                <input type="checkbox" id="makita" name="makita" value="makita" checked>
+                <label for="makita">Makita</label>
+              </div>
+              <div>
+                <input type="checkbox" id="dewalt" name="dewalt" value="dewalt">
+                <label for="dewalt">Dewalt</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hitachi" name="hitachi" value="hitachi">
+                <label for="hitachi">Hitachi</label>
+              </div>
+            </div>
+            <div class="power-filter">
+              <h3>Питание:</h3>
+              <div>
+                <input type="radio" id="battery-powered" name="power-source" value="battery-powered"
+                       checked>
+                <label for="battery-powered">Аккумуляторные</label>
+              </div>
+              <div>
+                <input type="radio" id="line-powered" name="power-source" value="line-powered">
+                <label for="line-powered">Сетевые</label>
+              </div>
+            </div>
+            <div class="button form-button">
+              <input type="submit" value="Показать">
+            </div>
+          </form>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
-        <div>
+        <div class="section-heading">
           <h4>Сортировка:</h4>
           <ul class="sorting">
             <li><a href="#">По цене</a></li>
@@ -279,7 +324,11 @@
 
     <section class="modal">
         <h2 class="visually-hidden">Добавление товаров в корзину</h2>
-        <!-- Здесь будет форма добавления товаров в корзину -->
+        <p class="basket">Товар добавлен в корзину!</p>
+        <div class="contact-button">
+          <a href="#" class="button">Оформить заказ</a>
+          <a href="#" class="button button-white">Продолжить покупки</a>
+        </div>
         <span class="modal-close">x</span>
     </section>
 
