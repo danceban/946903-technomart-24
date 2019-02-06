@@ -282,11 +282,11 @@
         <form action="" method="post">
           <div class="half-width">
             <label for="name-surname">Ваше имя:</label>
-            <input type="text" name="user-name" placeholder="Имя Фамилия" autofocus required>
+            <input type="text" id="name-surname" name="user-name" placeholder="Имя Фамилия" autofocus required>
           </div>
           <div class="half-width">
             <label for="user-email">Ваш e-mail:</label>
-            <input type="email" name="user-email" placeholder="email@example.com" required>
+            <input type="email" id="user-email" name="user-email" placeholder="email@example.com" required>
           </div>
           <div class="full-width">
             <label for="contact-message">Текст письма:</label>
@@ -296,7 +296,7 @@
             <button class="button" type="submit">Отправить</button>
           </div>
         </form>
-        <span class="modal-close">x</span>
+        <button type="button" class="modal-close">x</button>
     </section>
 
   </body>

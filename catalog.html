@@ -31,18 +31,16 @@
         <span class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </div>
 
-      <ul class="user-navigation">
-        <li class="control">
-          <div class="user-name">
-            <a href="#">Равшан Джамшутович</a>
-          </div>
-          <div class="user-auth">
-            <a href="#" aria-label="Выход из аккаунта"><img src="img/icon-logout.svg" width="21" height="17" alt="Выход"></a>
-          </div>
-        </li>
-        <li class="user-link"><a href="#">Мои заказы</a></li>
-        <li class="user-link"><a href="#">Личный кабинет</a></li>
-      </ul>
+      <div class="user-block">
+        <div class="user-auth">
+          <a href="#">Равшан Джамшутович</a>
+          <a href="#" aria-label="Выход из аккаунта"><img src="img/icon-logout.svg" width="21" height="17" alt="Выход"></a>
+        </div>
+        <ul class="user-navigation">
+          <li class="user-link"><a href="#">Мои заказы</a></li>
+          <li class="user-link"><a href="#">Личный кабинет</a></li>
+        </ul>
+      </div>
 
       <nav class="site-navigation">
         <ul>
@@ -334,10 +332,10 @@
         <h2 class="visually-hidden">Добавление товаров в корзину</h2>
         <p class="basket">Товар добавлен в корзину!</p>
         <div class="contact-button">
-          <a href="#" class="button">Оформить заказ</a>
-          <a href="#" class="button button-white">Продолжить покупки</a>
+          <button type="button" class="button">Оформить заказ</button>
+          <button type="button" class="button button-white">Продолжить покупки</button>
         </div>
-        <span class="modal-close">x</span>
+        <button type="button" class="modal-close">x</button>
     </section>
 
   </body>
