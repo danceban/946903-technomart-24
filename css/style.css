@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #f3f7f8;
+}
+
+.main-navigation {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.main-navigation-logo {
+  width: 220px;
+  height: 42px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b62b35;
+  display: block;
+}
+
+.main-navigation-logo:hover,
+.main-navigation-logo:focus,
+.main-navigation-logo:active {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #8e1e26;
+}
+
+.main-navigation-links {
+  list-style: none;
+}
+
+.main-navigation-links a {
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.cart-filled a {
+  background-color: #ee3643;
+}
+
+.main-navigation-links a:hover {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.main-navigation-links a:focus,
+.main-navigation-links a:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #212a3a;
+}
+
+.complete-order a {
+  color: #ffffff;
+  background-color: #63a63e;
+  font-style: normal;
+}
+
+.complete-order a:hover {
+  color: #ffffff;
+  background-color: #5fbb2d;
+}
+
+.complete-order a:focus,
+.complete-order a:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.slogan {
+  color: #ee3643;
+  font-style: italic;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header-contacts-phone {
+  color:#ee3643;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header-contacts-adress {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.user-auth {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.user-auth a {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+.user-auth a:hover {
+  color: #ee3643;
+}
+
+.user-auth a:focus,
+.user-auth a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logged-in a:hover {
+  color: #000000;
+}
+
+.user-navigation a {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.user-navigation a:hover {
+  color: #ee3643;
+}
+
+.user-navigation a:focus,
+.user-navigation a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: #ffffff;
+  background-color: #32425c;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: none;
+  border-bottom: 5px solid #293449;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:focus,
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+}
+
+.promo-card h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.promo-card a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 25px 10px 25px;
+  border-radius: 3px;
+}
+
+.promo-card a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-card a:focus,
+.promo-card a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.instruments {
+  background-color: #3bbce3;
+}
+
+.machines {
+  background-color: #dc91d8;
+}
+
+.discount {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.carousel h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.carousel span {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active,
+.button:focus {
+  background-color: #ba2732;
+}
+
+.heading {
+  background-color: #f9f5f0;
+}
+
+.heading h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.catalog-list {
+  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.catalog-item {
+  border: 1px solid #eaeaea;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size:17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #ee3643;
+}
+
+.bookmark {
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.bookmark:active,
+.bookmark:focus {
+  color: rgba(50, 66, 92, 0.3);
+  border: 3px solid #c1c6ce;
+}
+
+.buy {
+font-size: 14px;
+line-height: 18px;
+color: #ffffff;
+background-color: #63a63e;
+border-bottom: 3px solid #367315;
+}
+
+.buy:hover {
+  background-color: #5fbb2d;
+}
+
+.buy:focus,
+.buy:active {
+  background-color: #518534;
+}
+
+.services {
+  background-color: #f4f8fa;
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+.services p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: none;
+}
+
+.delivery-slide h3 {
+  font-size: 21px;
+  line-height: 30px;
+  text-transform: none;
+  color: #32425c;
+  background-color: #ffffff;
+
+}
