@@ -37,7 +37,6 @@ a {
 
 .main-navigation-logo {
   width: 220px;
-  height: 42px;
   background-color: #ee3643;
   border-bottom: 5px solid #b62b35;
   display: block;
@@ -158,7 +157,7 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
-.site-navigation {
+.site-navigation li {
   list-style: none;
 }
 .site-navigation a {
@@ -331,6 +330,10 @@ border-bottom: 3px solid #367315;
   background-color: #518534;
 }
 
+.popular-manufacturers-list li {
+  list-style: none;
+}
+
 .services {
   background-color: #f4f8fa;
 }
@@ -339,6 +342,13 @@ border-bottom: 3px solid #367315;
   font-size: 30px;
   line-height: 30px;
 }
+
+.service-slide h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
 .services p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -347,11 +357,274 @@ border-bottom: 3px solid #367315;
   text-transform: none;
 }
 
-.delivery-slide h3 {
+.service-button {
+  color: #ffffff;
+  background-color: #32425c;
   font-size: 21px;
   line-height: 30px;
   text-transform: none;
+}
+
+.service-button:hover {
+  background-color: #293449;
+}
+
+.service-button:active,
+.service-button:focus {
   color: #32425c;
   background-color: #ffffff;
+  border:none;
+}
 
+.about-container h2,
+.contacts-container h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about-container p,
+.contacts-container p {
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.about-container li {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: none;
+  list-style: none;
+}
+
+footer {
+  background-color: #32425c;
+}
+
+.footer-navigation-logo {
+  width: 220px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b62b35;
+  display: block;
+}
+
+.footer-navigation-logo:hover,
+.footer-navigation-logo:focus,
+.footer-navigation-logo:active {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #8e1e26;
+}
+
+.main-footer-navigation {
+  list-style: none;
+}
+
+.main-footer-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+  text-transform: none;
+}
+
+.main-footer-navigation a:hover {
+  color: #f1f5f7;
+  text-decoration: underline;
+}
+
+.main-footer-navigation a:active,
+.main-footer-navigation a:focus {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.footer-contacts {
+  color: #f1f5f7;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.second-footer-navigation {
+  list-style: none;
+}
+
+.second-footer-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+  text-transform: none;
+}
+
+.second-footer-navigation a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.second-footer-navigation a:active,
+.second-footer-navigation a:focus {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.footer-bottom-links {
+  background-color: #293449;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #212a3a;
+}
+
+.social-button:hover {
+  background-color: #ee3643;
+}
+
+.social-button:active,
+.social-button:focus {
+  background-color: #ee3643;
+}
+
+.footer-links {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  color: #ffffff;
+}
+
+.footer-links a {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  color: #ffd180;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links a:active,
+.footer-links a:focus {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.contact-modal label {
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: none;
+  color: #000000;
+}
+
+.contact-button {
+  background-color: #f4f4f4;
+}
+
+.catalog-heading {
+  background-color: #f2f6f8;
+}
+
+.catalog-heading h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.section-heading {
+  background-color: #f7f3ec;
+}
+
+.section-heading h4 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.form-button .button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+}
+
+.sorting li {
+  list-style: none;
+}
+
+.sorting a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline dotted #ee3643;
+}
+
+.sorting a:hover {
+  color: #000000;
+  text-decoration: underline #ee3643;
+}
+
+.sorting a:active,
+.sorting a:focus {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.pagination-list li {
+  list-style: none;
+}
+
+.pagination-item a,
+.pagination-item-current a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:active,
+.pagination-item a:focus {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-current a {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.about {
+  background-color: #f2f6f8;
+}
+
+.about h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: none;
 }
