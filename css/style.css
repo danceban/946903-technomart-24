@@ -12,14 +12,14 @@ body {
 }
 
 .visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
   width: 1px;
+  overflow: hidden;
 }
 
 a {
@@ -42,11 +42,69 @@ a {
   display: block;
 }
 
-.main-navigation-logo:hover,
+.main-navigation-logo:hover {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #9a212a;
+}
 .main-navigation-logo:focus,
 .main-navigation-logo:active {
   background-color: #ca2c37;
   border-bottom: 5px solid #8e1e26;
+}
+
+.search-form {
+  position: relative;
+  width: 300px;
+}
+
+.search-field {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 20px 10px 50px;
+  width: 100%;
+  height: 40px;
+  background-color: #293449;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  border: none;
+}
+.search-field::placeholder {
+  color: #ffffff;
+}
+.search-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  fill: #fff;
+  opacity: 0.3;
+}
+.search-icon {
+  display: block;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+}
+.search-field:hover {
+  background-color: #212a3a;
+}
+.search-field:hover + .search-label {
+  opacity: 1;
+}
+.search-field:focus {
+  color: #000;
+  background-color: #fff;
+  outline: none;
+}
+.search-field:focus + .search-label {
+  fill: #ee3643;
+  opacity: 1;
 }
 
 .main-navigation-links {
@@ -155,6 +213,10 @@ a {
 .user-navigation a:focus,
 .user-navigation a:active {
   color: rgba(50, 66, 92, 0.3);
+}
+
+.site-navigation ul {
+  background-color: #32425c;
 }
 
 .site-navigation li {
@@ -531,6 +593,17 @@ footer {
   background-color: #f4f4f4;
 }
 
+.breadcrumbs {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.breadcrumbs li {
+  list-style: none;
+}
+
 .catalog-heading {
   background-color: #f2f6f8;
 }
@@ -549,6 +622,29 @@ footer {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+.catalog-filter {
+  color: #000000;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.catalog-filter legend {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.catalog-filter label:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.catalog-filter li {
+  list-style: none;
 }
 
 .form-button .button {
