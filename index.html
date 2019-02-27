@@ -40,7 +40,7 @@
         </div>
 
         <div class="header-contacts">
-          <p class="header-contacts-phone"><img src="img/icon-phone.svg" width="19px" height="19px" alt="Свяжитесь с нами по телефону">+7 (812) 555-05-55</p>
+          <p class="header-contacts-phone"><img src="img/icon-phone.svg" width="19px" height="19px" alt="Свяжитесь с нами по телефону"><span class="contact-phone">+7 (812) 555-05-55</span></p>
           <p class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
 
@@ -70,7 +70,8 @@
       <section class="features">
         <h2 class="visually-hidden">Обзор товаров и услуг</h2>
           <div class="first-promo-section">
-            <div class="promo-card materials new">
+            <div class="promo-card materials">
+                <div class="flag flag-new">новинка</div>
                 <h3>Материалы</h3>
                 <a href="#">На любой вкус</a>
             </div>
@@ -84,22 +85,24 @@
             </div>
           </div>
           <div class="second-promo-section">
-            <div class="carousel">
-              <div class="carousel-slide">
-                <h3>Дрели</h3>
-                <span>Соседям на радость!</span>
-                <a href="catalog.html" class="button">Открыть каталог</a>
-                <img src="img/promo-slide2.jpg" width="620" height="266" alt="Дрели">
-              </div>
-              <div class="carousel-slide visually-hidden">
-                <h3>Перфораторы</h3>
-                <span>Настоящие мужские игрушки</span>
-                <a href="catalog.html" class="button">Открыть каталог</a>
-                <img src="img/promo-slide1.jpg" width="620" height="266" alt="Перфораторы">
-              </div>
-              <button type="button" class="carousel-back">&#10094;</button>
-              <button type="button" class="carousel-next">&#10095;</button>
-            </div>
+              <div class="carousel-wrapper">
+                  <span id="item-1"></span>
+                  <span id="item-2"></span>
+                  <div class="carousel-item item-1">
+                    <h3>Дрели</h3>
+                    <p>Соседям на радость!</p>
+                    <a href="catalog.html" class="button slider-link">Открыть каталог</a>
+                    <a class="arrow arrow-prev" href="#item-2"></a>
+                    <a class="arrow arrow-next" href="#item-2"></a>
+                  </div>
+                  <div class="carousel-item item-2">
+                    <h3>Перфораторы</h3>
+                    <p>Настоящие мужские игрушки</p>
+                    <a class="arrow arrow-prev" href="#item-1"></a>
+                    <a class="arrow arrow-next" href="#item-1"></a>
+                    <a href="catalog.html" class="button slider-link">Открыть каталог</a>
+                  </div>
+                </div>
             <div class="third-promo-section">
               <div class="promo-card discount">
                 <h3>Скидки 50%</h3>
@@ -118,63 +121,51 @@
           <h2>Популярные товары:</h2>
           <a href="#" class="button">Все популярные товары</a>
         </div>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
-            <div class="catalog-item-image">
-              <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+        <div class="catalog-items">
+            <div class="row">
+              <div class="catalog-item">
+                <div class="actions">
+                  <a href="#" class="buy">Купить</a>
+                  <a href="#" class="bookmark">В закладки</a>
+                </div>
+                <div class="image"><img width="218" height="168" src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000"></div>
+                <div class="title">Перфоратор BOSCH BFG 9000</div>
+                <div class="old-price">32500 Р.</div>
+                <div class="new-price">25500 Р.</div>
+              </div>
+              <div class="catalog-item">
+                <div class="actions">
+                  <a href="#" class="buy">Купить</a>
+                  <a href="#" class="bookmark">В закладки</a>
+                </div>
+                <div class="image"><img width="218" height="168" src="/img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000"></div>
+                <div class="title">Перфоратор BOSCH BFG 3000</div>
+                <div class="old-price">22500 Р.</div>
+                <div class="new-price">15500 Р.</div>
+              </div>
+              <div class="catalog-item">
+                <div class="actions">
+                  <a href="#" class="buy">Купить</a>
+                  <a href="#" class="bookmark">В закладки</a>
+                </div>
+                <div class="image"><img width="218" height="168" src="/img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000"></div>
+                <div class="title">Перфоратор BOSCH BFG 6000</div>
+                <div class="old-price">22 500 Р.</div>
+                <div class="new-price">15 500 Р.</div>
+              </div>
+              <div class="catalog-item">
+                <div class="flag flag-new">новинка</div>
+                <div class="actions">
+                  <a href="#" class="buy">Купить</a>
+                  <a href="#" class="bookmark">В закладки</a>
+                </div>
+                <div class="image"><img width="218" height="168" src="/img/perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000"></div>
+                <div class="title">Перфоратор BOSCH BFG 2000</div>
+                <div class="old-price"></div>
+                <div class="new-price">12500 Р.</div>
+              </div>
             </div>
-            <p class="catalog-item-price">
-              <span class="old-price">32500 Р.</span>
-              <span class="new-price">25500 Р.</span>
-            </p>
-            <div class="catalog-buttons">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
-            <div class="catalog-item-image">
-              <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-            </div>
-            <p class="catalog-item-price">
-              <span class="old-price">22500 Р.</span>
-              <span class="new-price">15500 Р.</span>
-            </p>
-            <div class="catalog-buttons">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <div class="catalog-item-image">
-              <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-            </div>
-            <p class="catalog-item-price">
-              <span class="old-price">30500 Р.</span>
-              <span class="new-price">25500 Р.</span>
-            </p>
-            <div class="catalog-buttons">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-          </li>
-          <li class="catalog-item new-product">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <div class="catalog-item-image">
-              <img src="img/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-            </div>
-            <p class="catalog-item-price">
-                <span class="new-price">12500 Р.</span>
-            </p>
-            <div class="catalog-buttons">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-          </li>
-        </ul>
+          </div>
       </section>
 
       <section class="popular-manufacturers">
@@ -245,7 +236,9 @@
                   <img src="img/map-popup.jpg" width="940" height="466" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 </div>
               </a>
-            <a href="#" class="button">Заблудились? Напишите нам!</a>
+            <div class="contact-button-popup">
+              <a href="#" class="button contact-button">Заблудились? Напишите нам!</a>
+            </div>
           </div>
         </div>
       </section>
@@ -316,12 +309,12 @@
           </div>
           <div class="full-width">
             <label for="contact-message">Текст письма:</label>
-            <textarea id="contact-message" name="contact-message" rows="6" required>В свободной форме</textarea>
-          </div>
-          <div class="contact-button">
-            <button class="button " type="submit">Отправить</button>
+            <textarea id="contact-message" name="contact-message" rows="6" placeholder="В свободной форме" required></textarea>
           </div>
         </form>
+        <div class="contact-button-container">
+            <button class="button contact-modal-button" type="submit">Отправить</button>
+        </div>
         <button type="button" class="modal-close">x</button>
     </section>
 
